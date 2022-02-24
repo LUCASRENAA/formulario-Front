@@ -3,6 +3,9 @@
     --input-linear: linear-gradient(120deg, #e75590, #00c2cb);
     --button-linear: linear-gradient(120deg, #ff92bf, #51e8f1,#FF92BFFF);
     --border-height: 1px;
+    --input-error: red;
+    --button-disabled: #acacac ;
+    --button-success: rgb(18,151,107);
 }
 
 body{
@@ -75,6 +78,10 @@ body{
     width: 100%;
 }
 
+.login_border.error{
+    background: var(--input-error);
+}
+
 .login_submit{
     height:48px;
     width:100%;
@@ -91,6 +98,11 @@ body{
     transition: .5s ease-in-out;
 }
 
+.login_submit:disabled{
+    background:var(--button-disabled);
+    cursor: not-allowed;
+}
+
 .login_submit:hover{
     background-position: right;
 }
@@ -99,4 +111,11 @@ body{
     font-size:12px;
     color:#929292;
     text-decoration:none;
+}
+
+.login_submit.error{
+    background: var(--input-error);
+}
+.login_submit.success{
+    background: var(--button-success);
 }
