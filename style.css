@@ -1,3 +1,10 @@
+/*Variaveis*/
+:root{
+    --input-linear: linear-gradient(120deg, #e75590, #00c2cb);
+    --button-linear: linear-gradient(120deg, #ff92bf, #51e8f1,#FF92BFFF);
+    --border-height: 1px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -6,7 +13,7 @@ body{
 
 .login{
     height: 100vh;
-    background: linear-gradient(120deg, #e75590, #00c2cb);
+    background: var(--input-linear);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +54,7 @@ body{
 }
 
 .login_border{
-    height:1px;
+    height:var(--border-height);
     width:100%;
     margin:16px;
     background-color:#cfcfcf;
@@ -55,20 +62,24 @@ body{
 }
 
 .login_border::after{
+    height: var(--border-height);
     content: '';
     display: block;
-    height: 1px;
     width: 0;
     margin-bottom: 16px;
-    background: linear-gradient(120deg, #e75590, #00c2cb);
+    background: var(--input-linear);
     transition: .3s ease-in-out;
+}
+/*Efeito da linha embaixo do input*/
+.login_input:focus + .login_border::after{
+    width: 100%;
 }
 
 .login_submit{
     height:48px;
     width:100%;
     outline:none;
-    background: linear-gradient(120deg, #ff92bf, #51e8f1,#FF92BFFF);
+    background: var(--button-linear);
     background-size:200%;
     margin-bottom: 32px;
     color: white;
@@ -78,6 +89,10 @@ body{
     border-radius: 4px;
     cursor: pointer;
     transition: .5s ease-in-out;
+}
+
+.login_submit:hover{
+    background-position: right;
 }
 
 .login_reset{
