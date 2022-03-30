@@ -4,5 +4,5 @@ O formulário acima conta com validações Regex, e consulta API Fetch para vali
 
 
 
-https://user-images.githubusercontent.com/87040140/160755035-52a1d204-782b-4a7b-9443-675e794029b0.mp4
 
+![form](https://user-images.githubusercontent.com/87040140/160755159-e845b878-54a8-4625-8e58-5b0eba5a5fb1.png)
