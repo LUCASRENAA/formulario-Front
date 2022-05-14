@@ -4,7 +4,7 @@ O formulário acima conta com validações Regex, e consulta API Fetch para vali
 
 
 ## Tela de Login
-![vuln2.jpg](static/login.png)
+![login.jpg](img/login.png)
 
 ## Tela de Registro
-![vuln2.jpg](img/registro.png)
+![registro.jpg](img/registro.png)
